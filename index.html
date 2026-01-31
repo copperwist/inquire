@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copperwist | The Architecture of Absolute Certainty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-teal: #1a4d4e;
+            --brand-gold: #c5a059;
+            --brand-dark: #0f1c1c;
+        }
+        body {
+            background-color: var(--brand-dark);
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .playfair { font-family: 'Playfair Display', serif; }
+        
+        /* Fixed Gradient Text Block */
+        .gradient-text {
+            background: linear-gradient(to right, #e2e8f0, var(--brand-gold));
+            -webkit-background-clip: text;
+            background-clip: text; /* Standard property added */
+            -webkit-text-fill-color: transparent;
+            color: transparent; /* Fallback for transparency */
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: var(--brand-gold);
+            transform: translateY(-5px);
+        }
+        .btn-gold {
+            background: var(--brand-gold);
+            color: var(--brand-dark);
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+        .btn-gold:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center p-6 lg:px-12 fixed w-full z-50 bg-[#0f1c1c] bg-opacity-90 backdrop-blur-md">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 rounded-full border-2 border-[#c5a059] flex items-center justify-center">
+                <span class="text-[var(--brand-gold)] font-bold text-xs">C</span>
+            </div>
+            <span class="text-2xl font-semibold tracking-tighter">Copperwist<span class="text-[var(--brand-gold)]">.in</span></span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium opacity-80">
+            <a href="#vision" class="hover:text-[var(--brand-gold)] transition-colors">Vision</a>
+            <a href="#tiers" class="hover:text-[var(--brand-gold)] transition-colors">Tiers</a>
+            <a href="#trial" class="hover:text-[var(--brand-gold)] transition-colors">Trial</a>
+        </div>
+        <a href="#waitlist" class="btn-gold px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest">Inquire</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center text-center px-4 overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--brand-teal)] rounded-full filter blur-[120px] opacity-20"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[var(--brand-gold)] rounded-full filter blur-[120px] opacity-10"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl">
+            <h2 class="text-[var(--brand-gold)] uppercase tracking-[0.3em] text-sm mb-6 font-semibold">The OS for the Sovereign Individual</h2>
+            <h1 class="playfair text-5xl md:text-7xl mb-8 leading-tight">The Architecture of <span class="gradient-text">Absolute Certainty</span></h1>
+            <p class="text-xl md:text-2xl opacity-60 font-light mb-12 max-w-2xl mx-auto leading-relaxed">
+                Reclaim your time. Automate your legacy. Copperwist is the autonomous engine for your health, wealth, and global compliance.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="#waitlist" class="btn-gold px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm">Join Private Beta</a>
+                <a href="#tiers" class="border border-white border-opacity-20 hover:bg-white hover:bg-opacity-5 px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm transition-all">View Tiers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Triple Pillars -->
+    <section id="vision" class="py-24 px-6 lg:px-12 bg-[#0a1212]">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+            <div class="glass-card p-8 rounded-3xl">
+                <div class="text-[var(--brand-gold)] mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Financial Nexus</h3>
+                <p class="opacity-50 font-light leading-relaxed">Autonomous tax-efficient rebalancing and global asset orchestration across all Indian and international accounts.</p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl">
+                <div class="text-[var(--brand-gold)] mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Longevity Governor</h3>
+                <p class="opacity-50 font-light leading-relaxed">24/7 biometric monitoring and medical concierge integration to optimize your biological age and performance.</p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl">
+                <div class="text-[var(--brand-gold)] mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Legacy Vault</h3>
+                <p class="opacity-50 font-light leading-relaxed">Secure, rule-based family governance ensuring your values and wealth transfer seamlessly through generations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Tiers -->
+    <section id="tiers" class="py-24 px-6 lg:px-12">
+        <div class="text-center mb-16">
+            <h2 class="playfair text-4xl mb-4">Select Your Scale</h2>
+            <p class="opacity-50">Tailored protocols for different stages of wealth accumulation.</p>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-6">
+            <!-- Basic -->
+            <div class="glass-card p-8 rounded-3xl flex flex-col">
+                <h4 class="text-sm uppercase tracking-widest opacity-60 mb-2">Basic</h4>
+                <div class="text-3xl font-bold mb-6">₹20,000<span class="text-sm font-normal opacity-50">/mo</span></div>
+                <ul class="text-sm space-y-4 mb-8 flex-grow opacity-70">
+                    <li>• Unified Dashboard</li>
+                    <li>• Real-time Asset Tracking</li>
+                    <li>• Basic Health Sync</li>
+                </ul>
+                <button onclick="document.getElementById('waitlist').scrollIntoView()" class="w-full border border-white border-opacity-20 py-3 rounded-xl hover:bg-white hover:bg-opacity-5 transition">Inquire</button>
+            </div>
+            <!-- Plus -->
+            <div class="glass-card p-8 rounded-3xl flex flex-col border-opacity-30 border-[var(--brand-gold)]">
+                <h4 class="text-sm uppercase tracking-widest text-[var(--brand-gold)] mb-2 font-bold">Plus</h4>
+                <div class="text-3xl font-bold mb-6">₹50,000<span class="text-sm font-normal opacity-50">/mo</span></div>
+                <ul class="text-sm space-y-4 mb-8 flex-grow opacity-70">
+                    <li>• All Basic Features</li>
+                    <li>• Tax Optimization Engine</li>
+                    <li>• Biometric Health Alerts</li>
+                </ul>
+                <button onclick="document.getElementById('waitlist').scrollIntoView()" class="w-full btn-gold py-3 rounded-xl font-bold">Inquire</button>
+            </div>
+            <!-- Elite -->
+            <div class="glass-card p-8 rounded-3xl flex flex-col">
+                <h4 class="text-sm uppercase tracking-widest opacity-60 mb-2">Elite</h4>
+                <div class="text-3xl font-bold mb-6">₹1,00,000<span class="text-sm font-normal opacity-50">/mo</span></div>
+                <ul class="text-sm space-y-4 mb-8 flex-grow opacity-70">
+                    <li>• All Plus Features</li>
+                    <li>• Autonomous Rebalancing</li>
+                    <li>• Legacy Governance</li>
+                </ul>
+                <button onclick="document.getElementById('waitlist').scrollIntoView()" class="w-full border border-white border-opacity-20 py-3 rounded-xl hover:bg-white hover:bg-opacity-5 transition">Inquire</button>
+            </div>
+            <!-- Copperwist 1 -->
+            <div class="glass-card p-8 rounded-3xl flex flex-col bg-white bg-opacity-5">
+                <h4 class="text-sm uppercase tracking-widest opacity-60 mb-2">Copperwist 1</h4>
+                <div class="text-3xl font-bold mb-6">₹10,00,000<span class="text-sm font-normal opacity-50">/mo</span></div>
+                <ul class="text-sm space-y-4 mb-8 flex-grow opacity-70">
+                    <li>• Global Protocol Access</li>
+                    <li>• Private Security Cloud</li>
+                    <li>• Concierge Management</li>
+                </ul>
+                <button onclick="document.getElementById('waitlist').scrollIntoView()" class="w-full border border-white border-opacity-20 py-3 rounded-xl hover:bg-white hover:bg-opacity-5 transition">Inquire</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trial Section -->
+    <section id="trial" class="py-24 px-6 lg:px-12 bg-[var(--brand-teal)] bg-opacity-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="playfair text-4xl mb-6">Experience the Protocol</h2>
+            <p class="text-xl opacity-80 mb-10">We invite qualified individuals to a 30-day complimentary trial including a full Life Audit and Legacy Risk Assessment.</p>
+            <div class="flex flex-wrap justify-center gap-8 text-sm uppercase tracking-widest opacity-60">
+                <span>01. Onboarding</span>
+                <span>02. Data Integration</span>
+                <span>03. Optimization</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist / Footer -->
+        <section id="waitlist" class="py-32 px-6 lg:px-12 bg-[#0a1212]">
+        <div class="max-w-2xl mx-auto glass-card p-12 rounded-[3rem] border-opacity-20 border-[var(--brand-gold)]">
+            <h2 class="playfair text-3xl mb-8 text-center">Request Invitation</h2>
+            
+            <!-- FIXED: Added id="leadForm" -->
+            <form id="leadForm" class="space-y-6">
+                <div>
+                    <label class="block text-xs uppercase tracking-widest opacity-50 mb-2">Full Name</label>
+                    <!-- FIXED: Added id="userName" -->
+                    <input type="text" id="userName" class="w-full bg-white bg-opacity-5 border border-white border-opacity-10 rounded-xl px-4 py-4 focus:outline-none focus:border-[var(--brand-gold)] text-white" placeholder="John Doe" required>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest opacity-50 mb-2">Professional Email</label>
+                    <!-- FIXED: Added id="userEmail" -->
+                    <input type="email" id="userEmail" class="w-full bg-white bg-opacity-5 border border-white border-opacity-10 rounded-xl px-4 py-4 focus:outline-none focus:border-[var(--brand-gold)] text-white" placeholder="john@company.com" required>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-widest opacity-50 mb-2">Desired Tier</label>
+                    <!-- FIXED: Added id="userTier" -->
+                    <select id="userTier" class="w-full bg-[#0f1c1c] border border-white border-opacity-10 rounded-xl px-4 py-4 focus:outline-none focus:border-[var(--brand-gold)] appearance-none text-white">
+                        <option value="Basic">Basic (₹20,000/mo)</option>
+                        <option value="Plus">Plus (₹50,000/mo)</option>
+                        <option value="Elite">Elite (₹1,00,000/mo)</option>
+                        <option value="Copperwist 1">Copperwist 1 (₹10,00,000/mo)</option>
+                    </select>
+                </div>
+                <!-- FIXED: Added id="submitBtn" -->
+                <button type="submit" id="submitBtn" class="w-full btn-gold py-5 rounded-xl font-bold uppercase tracking-widest mt-8">Submit Application</button>
+            </form>
+            
+            <!-- FIXED: Added id="success-msg" -->
+            <div id="success-msg" class="hidden mt-6 text-center">
+                <p class="text-[var(--brand-gold)] font-medium text-xl">✓ Application Received</p>
+                <p class="opacity-50 mt-2">A specialist will contact you shortly.</p>
+            </div>
+        </div>
+        <footer class="mt-24 text-center opacity-30 text-xs tracking-widest space-y-4">
+            <p>&copy; 2024 COPPERWIST PROTOCOL INDIA. ALL RIGHTS RESERVED.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Security Protocol</a>
+                <a href="#">Contact</a>
+            </div>
+        </footer>
+    </section>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+        import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
+
+        // Your Firebase Configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDQVGyWdOtSRTjo8zxJJro1oxWmOi88Q6c",
+            authDomain: "copperwist.firebaseapp.com",
+            projectId: "copperwist",
+            storageBucket: "copperwist.firebasestorage.app",
+            messagingSenderId: "1033240792456",
+            appId: "1:1033240792456:web:bd8b05944a6f1cfd403e3d",
+            measurementId: "G-ZKFLJSZQ59"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // Form Logic
+        const leadForm = document.getElementById('leadForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const successMsg = document.getElementById('success-msg');
+
+        leadForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Disable button to prevent double clicks
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Transmitting Protocol...";
+
+            const formData = {
+                name: document.getElementById('userName').value,
+                email: document.getElementById('userEmail').value,
+                tier: document.getElementById('userTier').value,
+                timestamp: serverTimestamp()
+            };
+
+            try {
+                // Add data to Firestore collection named 'inquiries'
+                await addDoc(collection(db, "inquiries"), formData);
+                
+                // Show success
+                leadForm.classList.add('hidden');
+                successMsg.classList.remove('hidden');
+            } catch (error) {
+                console.error("Firebase Error:", error);
+                alert("Submission failed. Please check if you published the Firestore Rules.");
+                submitBtn.disabled = false;
+                submitBtn.innerText = "Submit Application";
+            }
+        });
+    </script>
+
+</body>
+</html>
